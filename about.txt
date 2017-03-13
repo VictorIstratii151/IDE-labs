@@ -1,0 +1,2 @@
+This branch will not be pushed into the remote master branch. Instead,
+on the remote repo, it will be as a separate branch.
