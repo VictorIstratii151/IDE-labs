@@ -1,4 +1,13 @@
+
 treeeext
 
 
 and some more text!
+
+TEEEXT
+
+
+teeext1
+
+
+now both files contain the same data!
