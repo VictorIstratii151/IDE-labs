@@ -1,0 +1,2 @@
+On another separate branch is located the file about_second.txt. This branch
+will also be pushed to github as a separate one.
