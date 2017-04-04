@@ -1,0 +1,1 @@
+D:\Code\IDE-labs\lab2\scientific_calculator\bin\Debug\scientific_calculator.exe.config
