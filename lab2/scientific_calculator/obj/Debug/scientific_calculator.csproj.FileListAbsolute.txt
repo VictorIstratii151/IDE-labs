@@ -1,1 +1,9 @@
 D:\Code\IDE-labs\lab2\scientific_calculator\bin\Debug\scientific_calculator.exe.config
+D:\Code\IDE-labs\lab2\scientific_calculator\bin\Debug\scientific_calculator.exe
+D:\Code\IDE-labs\lab2\scientific_calculator\bin\Debug\scientific_calculator.pdb
+D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.csprojResolveAssemblyReference.cache
+D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.Calculator.resources
+D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.Properties.Resources.resources
+D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.csproj.GenerateResource.Cache
+D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.exe
+D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.pdb

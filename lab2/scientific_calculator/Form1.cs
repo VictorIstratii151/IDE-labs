@@ -21,5 +21,43 @@ namespace scientific_calculator
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Calculator_Load(object sender, EventArgs e)
+        {
+            this.Width = 275;
+            txtDisplay.Width = 230;
+        }
+
+        private void standardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 275;
+            txtDisplay.Width = 230;
+        }
+
+        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 550;
+            txtDisplay.Width = 485;
+        }
     }
 }
