@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.standardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.scientificToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bckSpaceBtn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -75,66 +69,19 @@
             this.txtDisplay = new System.Windows.Forms.TextBox();
             this.lblShow = new System.Windows.Forms.Label();
             this.button41 = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // bckSpaceBtn
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.viewToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(514, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.standardToolStripMenuItem,
-            this.scientificToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // standardToolStripMenuItem
-            // 
-            this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
-            this.standardToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.standardToolStripMenuItem.Text = "Standard";
-            this.standardToolStripMenuItem.Click += new System.EventHandler(this.standardToolStripMenuItem_Click);
-            // 
-            // scientificToolStripMenuItem
-            // 
-            this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
-            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.scientificToolStripMenuItem.Text = "Scientific";
-            this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "Edit";
-            // 
-            // viewToolStripMenuItem
-            // 
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.viewToolStripMenuItem.Text = "View";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(12, 70);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 51);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "◄";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bckSpaceBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.bckSpaceBtn.Location = new System.Drawing.Point(12, 70);
+            this.bckSpaceBtn.Name = "bckSpaceBtn";
+            this.bckSpaceBtn.Size = new System.Drawing.Size(53, 51);
+            this.bckSpaceBtn.TabIndex = 2;
+            this.bckSpaceBtn.Text = "◄";
+            this.bckSpaceBtn.UseVisualStyleBackColor = true;
+            this.bckSpaceBtn.Click += new System.EventHandler(this.bckSpcBtn);
             // 
             // button3
             // 
@@ -145,7 +92,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "C";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.btnC);
             // 
             // button4
             // 
@@ -156,6 +103,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "±";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btnPlusMinus);
             // 
             // button5
             // 
@@ -469,6 +417,7 @@
             this.button34.TabIndex = 2;
             this.button34.Text = "Exp";
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.btnExp);
             // 
             // button35
             // 
@@ -551,13 +500,24 @@
             this.button41.TabIndex = 7;
             this.button41.Text = "CE";
             this.button41.UseVisualStyleBackColor = true;
-            this.button41.Click += new System.EventHandler(this.button41_Click);
+            this.button41.Click += new System.EventHandler(this.btnCE);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button2.Location = new System.Drawing.Point(326, 300);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(53, 51);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Pow";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 370);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button41);
             this.Controls.Add(this.lblShow);
             this.Controls.Add(this.txtDisplay);
@@ -598,27 +558,17 @@
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.bckSpaceBtn);
             this.Name = "Calculator";
             this.Load += new System.EventHandler(this.Calculator_Load);
             this.Click += new System.EventHandler(this.buttonClick);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem standardToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem scientificToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bckSpaceBtn;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
@@ -659,6 +609,7 @@
         private System.Windows.Forms.TextBox txtDisplay;
         private System.Windows.Forms.Label lblShow;
         private System.Windows.Forms.Button button41;
+        private System.Windows.Forms.Button button2;
     }
 }
 

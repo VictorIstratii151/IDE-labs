@@ -26,7 +26,7 @@ namespace scientific_calculator
             txtDisplay.TextAlign = HorizontalAlignment.Right;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bckSpcBtn(object sender, EventArgs e)
         {
             if(txtDisplay.Text.Length > 0)
             {
@@ -68,7 +68,6 @@ namespace scientific_calculator
                         txtDisplay.Text = (results / Double.Parse(txtDisplay.Text)).ToString();
                     }
                     break;
-                
             }
         }
 
@@ -126,13 +125,13 @@ namespace scientific_calculator
 
         }
 
-        private void button41_Click(object sender, EventArgs e)
+        private void btnCE(object sender, EventArgs e)
         {
             txtDisplay.Text = "0";
             //lblShow.Text = "";
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnC(object sender, EventArgs e)
         {
             txtDisplay.Text = "0";
             lblShow.Text = "";
@@ -147,5 +146,20 @@ namespace scientific_calculator
             lblShow.Text = System.Convert.ToString(results) + " " + operation;
         }
 
+        private void btnPlusMinus(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExp(object sender, EventArgs e)
+        {
+            Button num = (Button)sender;
+            operation = num.Text;
+            results = Double.Parse(txtDisplay.Text);
+            txtDisplay.Text = "0";
+            lblShow.Text = operation + "(" + System.Convert.ToString(results) + ")";
+            txtDisplay.Text = System.Convert.ToString(Math.Exp(results));
+
+        }
     }
 }
