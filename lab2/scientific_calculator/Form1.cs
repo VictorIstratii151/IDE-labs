@@ -12,6 +12,10 @@ namespace scientific_calculator
 {
     public partial class Calculator : Form
     {
+        Double results = 0;
+        String operation = "";
+        bool enterValue = false;
+
         public Calculator()
         {
             InitializeComponent();
@@ -19,22 +23,53 @@ namespace scientific_calculator
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            txtDisplay.TextAlign = HorizontalAlignment.Right;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if(txtDisplay.Text.Length > 0)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
+            }
 
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
+            if(txtDisplay.Text == "")
+            {
+                txtDisplay.Text = "0";
+            }
         }
 
         private void button37_Click(object sender, EventArgs e)
         {
+            lblShow.Text = "";
 
+            switch(operation)
+            {
+                case "+":
+                    {
+                        txtDisplay.Text = (results + Double.Parse(txtDisplay.Text)).ToString();
+                    }
+                    break;
+
+                case "-":
+                    {
+                        txtDisplay.Text = (results - Double.Parse(txtDisplay.Text)).ToString();
+                    }
+                    break;
+
+                case "*":
+                    {
+                        txtDisplay.Text = (results * Double.Parse(txtDisplay.Text)).ToString();
+                    }
+                    break;
+
+                case "/":
+                    {
+                        txtDisplay.Text = (results / Double.Parse(txtDisplay.Text)).ToString();
+                    }
+                    break;
+                
+            }
         }
 
         private void button39_Click(object sender, EventArgs e)
@@ -46,6 +81,9 @@ namespace scientific_calculator
         {
             this.Width = 275;
             txtDisplay.Width = 230;
+           // txtDisplay.Text = "0";
+           // lblShow.Text = "";
+
         }
 
         private void standardToolStripMenuItem_Click(object sender, EventArgs e)
@@ -59,5 +97,55 @@ namespace scientific_calculator
             this.Width = 550;
             txtDisplay.Width = 485;
         }
+
+        private void buttonClick(object sender, EventArgs e)
+        {
+            if((txtDisplay.Text == "0") || (enterValue))
+            {
+                txtDisplay.Text = "";
+            }
+
+            enterValue = false;
+            Button num = (Button)sender;
+
+            if(num.Text == ".")
+            {
+                if(!txtDisplay.Text.Contains("."))
+                {
+                    txtDisplay.Text += num.Text;
+                }
+            }
+            else
+            {
+                txtDisplay.Text += num.Text;
+            }
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text = "0";
+            //lblShow.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text = "0";
+            lblShow.Text = "";
+        }
+
+        private void ArithmeticOperation(object sender, EventArgs e)
+        {
+            Button num = (Button)sender;
+            operation = num.Text;
+            results = Double.Parse(txtDisplay.Text);
+            txtDisplay.Text = "";
+            lblShow.Text = System.Convert.ToString(results) + " " + operation;
+        }
+
     }
 }

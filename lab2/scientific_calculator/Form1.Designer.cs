@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtDisplay = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.standardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,7 +35,6 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -70,22 +68,15 @@
             this.button33 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
             this.button39 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
+            this.txtDisplay = new System.Windows.Forms.TextBox();
+            this.lblShow = new System.Windows.Forms.Label();
+            this.button41 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtDisplay
-            // 
-            this.txtDisplay.Location = new System.Drawing.Point(12, 27);
-            this.txtDisplay.Multiline = true;
-            this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.Size = new System.Drawing.Size(230, 37);
-            this.txtDisplay.TabIndex = 0;
-            this.txtDisplay.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // menuStrip1
             // 
@@ -95,7 +86,7 @@
             this.viewToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(343, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(514, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -111,14 +102,14 @@
             // standardToolStripMenuItem
             // 
             this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
-            this.standardToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.standardToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.standardToolStripMenuItem.Text = "Standard";
             this.standardToolStripMenuItem.Click += new System.EventHandler(this.standardToolStripMenuItem_Click);
             // 
             // scientificToolStripMenuItem
             // 
             this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
-            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.scientificToolStripMenuItem.Text = "Scientific";
             this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
             // 
@@ -145,16 +136,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button2.Location = new System.Drawing.Point(71, 70);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(53, 51);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Œ";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -164,6 +145,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "C";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -184,6 +166,7 @@
             this.button5.TabIndex = 2;
             this.button5.Text = "7";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.buttonClick);
             // 
             // button6
             // 
@@ -194,7 +177,7 @@
             this.button6.TabIndex = 2;
             this.button6.Text = "8";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.buttonClick);
             // 
             // button7
             // 
@@ -205,6 +188,7 @@
             this.button7.TabIndex = 2;
             this.button7.Text = "9";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.buttonClick);
             // 
             // button8
             // 
@@ -215,6 +199,7 @@
             this.button8.TabIndex = 2;
             this.button8.Text = "+";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.ArithmeticOperation);
             // 
             // button9
             // 
@@ -225,6 +210,7 @@
             this.button9.TabIndex = 2;
             this.button9.Text = "4";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.buttonClick);
             // 
             // button10
             // 
@@ -235,6 +221,7 @@
             this.button10.TabIndex = 2;
             this.button10.Text = "5";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.buttonClick);
             // 
             // button11
             // 
@@ -245,6 +232,7 @@
             this.button11.TabIndex = 2;
             this.button11.Text = "1";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.buttonClick);
             // 
             // button12
             // 
@@ -255,6 +243,7 @@
             this.button12.TabIndex = 2;
             this.button12.Text = "2";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.buttonClick);
             // 
             // button13
             // 
@@ -265,6 +254,7 @@
             this.button13.TabIndex = 2;
             this.button13.Text = "6";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.buttonClick);
             // 
             // button14
             // 
@@ -275,6 +265,7 @@
             this.button14.TabIndex = 2;
             this.button14.Text = "3";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.buttonClick);
             // 
             // button15
             // 
@@ -285,6 +276,7 @@
             this.button15.TabIndex = 2;
             this.button15.Text = "-";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.ArithmeticOperation);
             // 
             // button16
             // 
@@ -295,6 +287,7 @@
             this.button16.TabIndex = 2;
             this.button16.Text = "*";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.ArithmeticOperation);
             // 
             // button17
             // 
@@ -465,6 +458,7 @@
             this.button33.TabIndex = 2;
             this.button33.Text = "0";
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.buttonClick);
             // 
             // button34
             // 
@@ -485,16 +479,7 @@
             this.button35.TabIndex = 2;
             this.button35.Text = ".";
             this.button35.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button36.Location = new System.Drawing.Point(326, 300);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(53, 51);
-            this.button36.TabIndex = 2;
-            this.button36.Text = "Mod";
-            this.button36.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.buttonClick);
             // 
             // button37
             // 
@@ -526,7 +511,7 @@
             this.button39.TabIndex = 2;
             this.button39.Text = "/";
             this.button39.UseVisualStyleBackColor = true;
-            this.button39.Click += new System.EventHandler(this.button39_Click);
+            this.button39.Click += new System.EventHandler(this.ArithmeticOperation);
             // 
             // button40
             // 
@@ -538,11 +523,44 @@
             this.button40.Text = "%";
             this.button40.UseVisualStyleBackColor = true;
             // 
+            // txtDisplay
+            // 
+            this.txtDisplay.Location = new System.Drawing.Point(12, 27);
+            this.txtDisplay.Multiline = true;
+            this.txtDisplay.Name = "txtDisplay";
+            this.txtDisplay.Size = new System.Drawing.Size(230, 37);
+            this.txtDisplay.TabIndex = 3;
+            this.txtDisplay.Text = "0";
+            this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDisplay.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // lblShow
+            // 
+            this.lblShow.AutoSize = true;
+            this.lblShow.Location = new System.Drawing.Point(23, 30);
+            this.lblShow.Name = "lblShow";
+            this.lblShow.Size = new System.Drawing.Size(0, 13);
+            this.lblShow.TabIndex = 5;
+            // 
+            // button41
+            // 
+            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button41.Location = new System.Drawing.Point(71, 70);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(53, 51);
+            this.button41.TabIndex = 7;
+            this.button41.Text = "CE";
+            this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 370);
+            this.ClientSize = new System.Drawing.Size(514, 370);
+            this.Controls.Add(this.button41);
+            this.Controls.Add(this.lblShow);
+            this.Controls.Add(this.txtDisplay);
             this.Controls.Add(this.button40);
             this.Controls.Add(this.button32);
             this.Controls.Add(this.button39);
@@ -563,7 +581,6 @@
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button36);
             this.Controls.Add(this.button24);
             this.Controls.Add(this.button35);
             this.Controls.Add(this.button12);
@@ -580,15 +597,13 @@
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button18);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtDisplay);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Calculator";
-            this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Calculator_Load);
+            this.Click += new System.EventHandler(this.buttonClick);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -597,8 +612,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtDisplay;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem standardToolStripMenuItem;
@@ -606,7 +619,6 @@
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
@@ -640,11 +652,13 @@
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Button button34;
         private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
         private System.Windows.Forms.Button button37;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button39;
         private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.TextBox txtDisplay;
+        private System.Windows.Forms.Label lblShow;
+        private System.Windows.Forms.Button button41;
     }
 }
 
