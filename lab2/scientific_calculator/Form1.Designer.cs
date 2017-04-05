@@ -44,13 +44,13 @@
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnMul = new System.Windows.Forms.Button();
             this.btnPi = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
+            this.btnLog = new System.Windows.Forms.Button();
+            this.btnCosh = new System.Windows.Forms.Button();
+            this.btnSinh = new System.Windows.Forms.Button();
+            this.btnCos = new System.Windows.Forms.Button();
+            this.btnSin = new System.Windows.Forms.Button();
+            this.btnTanh = new System.Windows.Forms.Button();
+            this.btnTan = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
@@ -248,75 +248,75 @@
             this.btnPi.UseVisualStyleBackColor = true;
             this.btnPi.Click += new System.EventHandler(this.btnPi_Click);
             // 
-            // button18
+            // btnLog
             // 
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button18.Location = new System.Drawing.Point(326, 70);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(53, 51);
-            this.button18.TabIndex = 2;
-            this.button18.Text = "Log";
-            this.button18.UseVisualStyleBackColor = true;
+            this.btnLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnLog.Location = new System.Drawing.Point(326, 70);
+            this.btnLog.Name = "btnLog";
+            this.btnLog.Size = new System.Drawing.Size(53, 51);
+            this.btnLog.TabIndex = 2;
+            this.btnLog.Text = "Log";
+            this.btnLog.UseVisualStyleBackColor = true;
             // 
-            // button19
+            // btnCosh
             // 
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button19.Location = new System.Drawing.Point(267, 186);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(53, 51);
-            this.button19.TabIndex = 2;
-            this.button19.Text = "Cosh";
-            this.button19.UseVisualStyleBackColor = true;
+            this.btnCosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnCosh.Location = new System.Drawing.Point(267, 186);
+            this.btnCosh.Name = "btnCosh";
+            this.btnCosh.Size = new System.Drawing.Size(53, 51);
+            this.btnCosh.TabIndex = 2;
+            this.btnCosh.Text = "Cosh";
+            this.btnCosh.UseVisualStyleBackColor = true;
             // 
-            // button20
+            // btnSinh
             // 
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button20.Location = new System.Drawing.Point(267, 127);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(53, 51);
-            this.button20.TabIndex = 2;
-            this.button20.Text = "Sinh";
-            this.button20.UseVisualStyleBackColor = true;
+            this.btnSinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSinh.Location = new System.Drawing.Point(267, 127);
+            this.btnSinh.Name = "btnSinh";
+            this.btnSinh.Size = new System.Drawing.Size(53, 51);
+            this.btnSinh.TabIndex = 2;
+            this.btnSinh.Text = "Sinh";
+            this.btnSinh.UseVisualStyleBackColor = true;
             // 
-            // button21
+            // btnCos
             // 
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button21.Location = new System.Drawing.Point(326, 186);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(53, 51);
-            this.button21.TabIndex = 2;
-            this.button21.Text = "Cos";
-            this.button21.UseVisualStyleBackColor = true;
+            this.btnCos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnCos.Location = new System.Drawing.Point(326, 186);
+            this.btnCos.Name = "btnCos";
+            this.btnCos.Size = new System.Drawing.Size(53, 51);
+            this.btnCos.TabIndex = 2;
+            this.btnCos.Text = "Cos";
+            this.btnCos.UseVisualStyleBackColor = true;
             // 
-            // button22
+            // btnSin
             // 
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button22.Location = new System.Drawing.Point(326, 127);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(53, 51);
-            this.button22.TabIndex = 2;
-            this.button22.Text = "Sin";
-            this.button22.UseVisualStyleBackColor = true;
+            this.btnSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSin.Location = new System.Drawing.Point(326, 127);
+            this.btnSin.Name = "btnSin";
+            this.btnSin.Size = new System.Drawing.Size(53, 51);
+            this.btnSin.TabIndex = 2;
+            this.btnSin.Text = "Sin";
+            this.btnSin.UseVisualStyleBackColor = true;
             // 
-            // button23
+            // btnTanh
             // 
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button23.Location = new System.Drawing.Point(267, 243);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(53, 51);
-            this.button23.TabIndex = 2;
-            this.button23.Text = "Tanh";
-            this.button23.UseVisualStyleBackColor = true;
+            this.btnTanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnTanh.Location = new System.Drawing.Point(267, 243);
+            this.btnTanh.Name = "btnTanh";
+            this.btnTanh.Size = new System.Drawing.Size(53, 51);
+            this.btnTanh.TabIndex = 2;
+            this.btnTanh.Text = "Tanh";
+            this.btnTanh.UseVisualStyleBackColor = true;
             // 
-            // button24
+            // btnTan
             // 
-            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button24.Location = new System.Drawing.Point(326, 243);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(53, 51);
-            this.button24.TabIndex = 2;
-            this.button24.Text = "Tan";
-            this.button24.UseVisualStyleBackColor = true;
+            this.btnTan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnTan.Location = new System.Drawing.Point(326, 243);
+            this.btnTan.Name = "btnTan";
+            this.btnTan.Size = new System.Drawing.Size(53, 51);
+            this.btnTan.TabIndex = 2;
+            this.btnTan.Text = "Tan";
+            this.btnTan.UseVisualStyleBackColor = true;
             // 
             // button25
             // 
@@ -542,22 +542,22 @@
             this.Controls.Add(this.btn6);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.C);
-            this.Controls.Add(this.button24);
+            this.Controls.Add(this.btnTan);
             this.Controls.Add(this.btnDot);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.button34);
-            this.Controls.Add(this.button23);
+            this.Controls.Add(this.btnTanh);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn1);
-            this.Controls.Add(this.button22);
+            this.Controls.Add(this.btnSin);
             this.Controls.Add(this.btn8);
-            this.Controls.Add(this.button21);
+            this.Controls.Add(this.btnCos);
             this.Controls.Add(this.btn5);
-            this.Controls.Add(this.button20);
+            this.Controls.Add(this.btnSinh);
             this.Controls.Add(this.btn7);
-            this.Controls.Add(this.button19);
+            this.Controls.Add(this.btnCosh);
             this.Controls.Add(this.btn4);
-            this.Controls.Add(this.button18);
+            this.Controls.Add(this.btnLog);
             this.Controls.Add(this.btnPi);
             this.Controls.Add(this.bckSpaceBtn);
             this.Name = "Calculator";
@@ -585,13 +585,13 @@
         private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Button btnMul;
         private System.Windows.Forms.Button btnPi;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button btnLog;
+        private System.Windows.Forms.Button btnCosh;
+        private System.Windows.Forms.Button btnSinh;
+        private System.Windows.Forms.Button btnCos;
+        private System.Windows.Forms.Button btnSin;
+        private System.Windows.Forms.Button btnTanh;
+        private System.Windows.Forms.Button btnTan;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
