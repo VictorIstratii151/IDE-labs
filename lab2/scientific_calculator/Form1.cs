@@ -163,5 +163,10 @@ namespace scientific_calculator
             txtDisplay.Text = System.Convert.ToString(Math.Exp(results));
 
         }
+
+        private void btnPi_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text = "3.1415926535899";
+        }
     }
 }

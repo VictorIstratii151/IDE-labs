@@ -246,6 +246,7 @@
             this.btnPi.TabIndex = 2;
             this.btnPi.Text = "π";
             this.btnPi.UseVisualStyleBackColor = true;
+            this.btnPi.Click += new System.EventHandler(this.btnPi_Click);
             // 
             // button18
             // 
