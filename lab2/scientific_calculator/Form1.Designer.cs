@@ -560,8 +560,8 @@
             this.Controls.Add(this.btnPi);
             this.Controls.Add(this.bckSpaceBtn);
             this.Name = "Calculator";
+            this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Calculator_Load);
-            this.Click += new System.EventHandler(this.buttonClick);
             this.ResumeLayout(false);
             this.PerformLayout();
 
