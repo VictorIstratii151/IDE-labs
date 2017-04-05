@@ -148,7 +148,9 @@ namespace scientific_calculator
 
         private void btnPlusMinus(object sender, EventArgs e)
         {
-
+            results = (-1) * (Double.Parse(txtDisplay.Text));
+            lblShow.Text = "(" + System.Convert.ToString(results) + ")";
+            txtDisplay.Text = System.Convert.ToString(results);
         }
 
         private void btnExp(object sender, EventArgs e)
