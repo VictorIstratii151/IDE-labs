@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using calculatorLogic;
 
 namespace scientific_calculator
 {
@@ -47,7 +48,8 @@ namespace scientific_calculator
             {
                 case "+":
                     {
-                        txtDisplay.Text = (results + Double.Parse(txtDisplay.Text)).ToString();
+                        txtDisplay.Text = (BusinessLogic.addDoubles(results, Double.Parse(txtDisplay.Text))).ToString();
+                        //txtDisplay.Text = (results + Double.Parse(txtDisplay.Text)).ToString();
                     }
                     break;
 
