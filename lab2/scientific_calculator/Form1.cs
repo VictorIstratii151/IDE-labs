@@ -29,15 +29,16 @@ namespace scientific_calculator
 
         private void bckSpcBtn(object sender, EventArgs e)
         {
-            if(txtDisplay.Text.Length > 0)
-            {
-                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
-            }
+            txtDisplay.Text = BusinessLogic.backspace(txtDisplay);
+            //if(txtDisplay.Text.Length > 0)
+            //{
+            //    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
+            //}
 
-            if(txtDisplay.Text == "")
-            {
-                txtDisplay.Text = "0";
-            }
+            //if(txtDisplay.Text == "")
+            //{
+            //    txtDisplay.Text = "0";
+            //}
         }
 
         private void button37_Click(object sender, EventArgs e)
@@ -121,13 +122,15 @@ namespace scientific_calculator
 
         private void btnCE(object sender, EventArgs e)
         {
-            txtDisplay.Text = "0";
+            // txtDisplay.Text = "0";
+            txtDisplay.Text = BusinessLogic.CE(txtDisplay);
         }
 
         private void btnC(object sender, EventArgs e)
         {
-            txtDisplay.Text = "0";
-            lblShow.Text = "";
+            BusinessLogic.Clear(txtDisplay, lblShow);
+            //txtDisplay.Text = "0";
+            //lblShow.Text = "";
         }
 
         private void ArithmeticOperation(object sender, EventArgs e)
@@ -141,7 +144,8 @@ namespace scientific_calculator
 
         private void btnPlusMinus(object sender, EventArgs e)
         {
-            results = (-1) * (Double.Parse(txtDisplay.Text));
+            results = BusinessLogic.PlusMinus(Double.Parse(txtDisplay.Text));
+            // results = (-1) * (Double.Parse(txtDisplay.Text));
             lblShow.Text = "(" + System.Convert.ToString(results) + ")";
             txtDisplay.Text = System.Convert.ToString(results);
         }
