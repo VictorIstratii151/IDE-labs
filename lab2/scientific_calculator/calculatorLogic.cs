@@ -91,5 +91,89 @@ namespace calculatorLogic
             return Math.Log(d1);
         }
 
+        public static double Sqrt(double d1)
+        {
+            return Math.Sqrt(d1);
+        }
+
+        public static double Sin(double d1)
+        {
+            return Math.Sin(d1);
+        }
+
+        public static double Sinh(double d1)
+        {
+            return Math.Sinh(d1);
+        }
+
+        public static double Cos(double d1)
+        {
+            return Math.Cos(d1);
+        }
+
+        public static double Cosh(double d1)
+        {
+            return Math.Cosh(d1);
+        }
+
+        public static double Tan(double d1)
+        {
+            return Math.Tan(d1);
+        }
+
+        public static double Tanh(double d1)
+        {
+            return Math.Tanh(d1);
+        }
+
+        public static string toDec(TextBox txt)
+        {
+            int a = int.Parse(txt.Text);
+
+            return System.Convert.ToString(a, 10);
+        }
+
+        public static string toBin(TextBox txt)
+        {
+            int a = int.Parse(txt.Text);
+
+            return System.Convert.ToString(a, 2);
+        }
+
+        public static string toOct(TextBox txt)
+        {
+            int a = int.Parse(txt.Text);
+
+            return System.Convert.ToString(a, 8);
+        }
+
+        public static string toHex(TextBox txt)
+        {
+            int a = int.Parse(txt.Text);
+
+            return System.Convert.ToString(a, 16);
+        }
+
+        public static double Pow2(TextBox txt)
+        {
+            double a = Double.Parse(txt.Text);
+
+            return a * a;
+        }
+
+        public static double Pow3(TextBox txt)
+        {
+            double a = Double.Parse(txt.Text);
+
+            return a * a * a;
+        }
+
+        public static double oneOver(TextBox txt)
+        {
+            double a = Double.Parse(txt.Text);
+
+            return 1 / a;
+        }
+
     }
 }

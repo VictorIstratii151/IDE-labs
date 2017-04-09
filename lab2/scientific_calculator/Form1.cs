@@ -56,31 +56,36 @@ namespace scientific_calculator
 
                 case "-":
                     {
-                        txtDisplay.Text = (results - Double.Parse(txtDisplay.Text)).ToString();
+                        txtDisplay.Text = (BusinessLogic.subtractDoubles(results, Double.Parse(txtDisplay.Text))).ToString();
+                        //txtDisplay.Text = (results - Double.Parse(txtDisplay.Text)).ToString();
                     }
                     break;
 
                 case "*":
                     {
-                        txtDisplay.Text = (results * Double.Parse(txtDisplay.Text)).ToString();
+                        txtDisplay.Text = (BusinessLogic.multiplyDoubles(results, Double.Parse(txtDisplay.Text))).ToString();
+                        //txtDisplay.Text = (results * Double.Parse(txtDisplay.Text)).ToString();
                     }
                     break;
 
                 case "/":
                     {
-                        txtDisplay.Text = (results / Double.Parse(txtDisplay.Text)).ToString();
+                        txtDisplay.Text = (BusinessLogic.divideDoubles(results, Double.Parse(txtDisplay.Text))).ToString();
+                        //txtDisplay.Text = (results / Double.Parse(txtDisplay.Text)).ToString();
                     }
                     break;
 
                 case "Pow":
                     {
-                        txtDisplay.Text = Math.Pow(results, Double.Parse(txtDisplay.Text)).ToString();
+                        txtDisplay.Text = (BusinessLogic.Power(results, Double.Parse(txtDisplay.Text))).ToString();
+                       // txtDisplay.Text = Math.Pow(results, Double.Parse(txtDisplay.Text)).ToString();
                     }
                     break;
 
                 case "%":
                     {
-                        txtDisplay.Text = (results % Double.Parse(txtDisplay.Text)).ToString();
+                        txtDisplay.Text = (BusinessLogic.modDoubles(results, Double.Parse(txtDisplay.Text))).ToString();
+                        //txtDisplay.Text = (results % Double.Parse(txtDisplay.Text)).ToString();
                     }
                     break;
             }
@@ -314,8 +319,8 @@ namespace scientific_calculator
 
         private void btnPow2_Click(object sender, EventArgs e)
         {
-            double a = Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text);
-            txtDisplay.Text = System.Convert.ToString(a);
+            //double a = Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text);
+            txtDisplay.Text = System.Convert.ToString(BusinessLogic.Pow2(txtDisplay));
         }
 
         private void btnPow3_Click(object sender, EventArgs e)
