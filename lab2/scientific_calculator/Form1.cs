@@ -208,7 +208,8 @@ namespace scientific_calculator
         {
             double isqrt = Double.Parse(txtDisplay.Text);
             lblShow.Text = System.Convert.ToString("sqrt(" + (txtDisplay.Text) + ")");
-            isqrt = Math.Sqrt(isqrt);
+            isqrt = BusinessLogic.Sqrt(isqrt);
+           // isqrt = Math.Sqrt(isqrt);
             txtDisplay.Text = "0";
             txtDisplay.Text = System.Convert.ToString(isqrt);
         }
