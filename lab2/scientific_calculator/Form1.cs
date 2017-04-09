@@ -189,8 +189,8 @@ namespace scientific_calculator
             operation = num.Text;
             double ilog = Double.Parse(txtDisplay.Text);
             lblShow.Text = operation + "10 (" + System.Convert.ToString(ilog) + ")";
-            ilog = Math.Log10(ilog);
-            txtDisplay.Text = "0";
+            ilog = BusinessLogic.Log10(ilog);
+           // ilog = Math.Log10(ilog);
             txtDisplay.Text = System.Convert.ToString(ilog);
         }
 
@@ -198,7 +198,8 @@ namespace scientific_calculator
         {
             double ilog = Double.Parse(txtDisplay.Text);
             lblShow.Text = "ln (" + System.Convert.ToString(ilog) + ")";
-            ilog = Math.Log(ilog);
+            ilog = BusinessLogic.Ln(ilog);
+           // ilog = Math.Log(ilog);
             txtDisplay.Text = "0";
             txtDisplay.Text = System.Convert.ToString(ilog);
         }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace calculatorLogic
 {
     class BusinessLogic
@@ -73,6 +74,21 @@ namespace calculatorLogic
         public static double Exp(double d1)
         {
             return Math.Exp(d1);
+        }
+
+        public static double Pi()
+        {
+            return Math.PI;
+        }
+        
+        public static double Log10(double d1)
+        {
+            return Math.Log10(d1);
+        }
+
+        public static double Ln(double d1)
+        {
+            return Math.Log(d1);
         }
 
     }
