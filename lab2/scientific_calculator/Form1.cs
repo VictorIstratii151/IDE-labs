@@ -162,13 +162,14 @@ namespace scientific_calculator
             results = Double.Parse(txtDisplay.Text);
             txtDisplay.Text = "0";
             lblShow.Text = operation + "(" + System.Convert.ToString(results) + ")";
-            txtDisplay.Text = System.Convert.ToString(Math.Exp(results));
+            txtDisplay.Text = System.Convert.ToString(BusinessLogic.Exp(results));
 
         }
 
         private void btnPi_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = System.Convert.ToString(3.1415926535899);
+            txtDisplay.Text =System.Convert.ToString(BusinessLogic.Pi());
+            //txtDisplay.Text = System.Convert.ToString(3.1415926535899);
         }
 
         private void btnDec_Click(object sender, EventArgs e)
@@ -230,7 +231,7 @@ namespace scientific_calculator
                     {
                         lblShow.Text = System.Convert.ToString("sin(" + (txtDisplay.Text) + ")");
                         results = Double.Parse(txtDisplay.Text);
-                        txtDisplay.Text = System.Convert.ToString((Math.Sin(Double.Parse(txtDisplay.Text)).ToString()));
+                        txtDisplay.Text = System.Convert.ToString((BusinessLogic.Sin(Double.Parse(txtDisplay.Text)).ToString()));
                     }
                     break;
 
@@ -238,7 +239,7 @@ namespace scientific_calculator
                     {
                         lblShow.Text = System.Convert.ToString("cos(" + (txtDisplay.Text) + ")");
                         results = Double.Parse(txtDisplay.Text);
-                        txtDisplay.Text = System.Convert.ToString((Math.Cos(Double.Parse(txtDisplay.Text)).ToString()));
+                        txtDisplay.Text = System.Convert.ToString((BusinessLogic.Cos(Double.Parse(txtDisplay.Text)).ToString()));
                     }
                     break;
 
@@ -246,7 +247,7 @@ namespace scientific_calculator
                     {
                         lblShow.Text = System.Convert.ToString("sinh(" + (txtDisplay.Text) + ")");
                         results = Double.Parse(txtDisplay.Text);
-                        txtDisplay.Text = System.Convert.ToString((Math.Sinh(Double.Parse(txtDisplay.Text)).ToString()));
+                        txtDisplay.Text = System.Convert.ToString((BusinessLogic.Sinh(Double.Parse(txtDisplay.Text)).ToString()));
                     }
                     break;
 
@@ -254,7 +255,7 @@ namespace scientific_calculator
                     {
                         lblShow.Text = System.Convert.ToString("cosh(" + (txtDisplay.Text) + ")");
                         results = Double.Parse(txtDisplay.Text);
-                        txtDisplay.Text = System.Convert.ToString((Math.Cosh(Double.Parse(txtDisplay.Text)).ToString()));
+                        txtDisplay.Text = System.Convert.ToString((BusinessLogic.Cosh(Double.Parse(txtDisplay.Text)).ToString()));
                     }
                     break;
 
@@ -262,7 +263,7 @@ namespace scientific_calculator
                     {
                         lblShow.Text = System.Convert.ToString("tan(" + (txtDisplay.Text) + ")");
                         results = Double.Parse(txtDisplay.Text);
-                        txtDisplay.Text = System.Convert.ToString((Math.Tan(Double.Parse(txtDisplay.Text)).ToString()));
+                        txtDisplay.Text = System.Convert.ToString((BusinessLogic.Tan(Double.Parse(txtDisplay.Text)).ToString()));
                     }
                     break;
 
@@ -270,7 +271,7 @@ namespace scientific_calculator
                     {
                         lblShow.Text = System.Convert.ToString("tanh(" + (txtDisplay.Text) + ")");
                         results = Double.Parse(txtDisplay.Text);
-                        txtDisplay.Text = System.Convert.ToString((Math.Tanh(Double.Parse(txtDisplay.Text)).ToString()));
+                        txtDisplay.Text = System.Convert.ToString((BusinessLogic.Tanh(Double.Parse(txtDisplay.Text)).ToString()));
                     }
                     break;
             }
@@ -290,28 +291,28 @@ namespace scientific_calculator
                 case "Dec":
                     {
                         int a = int.Parse(txtDisplay.Text);
-                        txtDisplay.Text = System.Convert.ToString(a, 10);
+                        txtDisplay.Text = BusinessLogic.toDec(txtDisplay);
                     }
                     break;
 
                 case "Bin":
                     {
                         int a = int.Parse(txtDisplay.Text);
-                        txtDisplay.Text = System.Convert.ToString(a, 2);
+                        txtDisplay.Text = BusinessLogic.toBin(txtDisplay);
                     }
                     break;
 
                 case "Hex":
                     {
                         int a = int.Parse(txtDisplay.Text);
-                        txtDisplay.Text = System.Convert.ToString(a, 16);
+                        txtDisplay.Text = BusinessLogic.toHex(txtDisplay);
                     }
                     break;
 
                 case "Oct":
                     {
                         int a = int.Parse(txtDisplay.Text);
-                        txtDisplay.Text = System.Convert.ToString(a, 8);
+                        txtDisplay.Text = BusinessLogic.toOct(txtDisplay);
                     }
                     break;
             }
@@ -325,14 +326,16 @@ namespace scientific_calculator
 
         private void btnPow3_Click(object sender, EventArgs e)
         {
-            double a = Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text);
-            txtDisplay.Text = System.Convert.ToString(a);
+            //double a = Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text);
+            txtDisplay.Text = System.Convert.ToString(BusinessLogic.Pow3(txtDisplay));
+            //txtDisplay.Text = System.Convert.ToString(a);
         }
 
         private void btn1overX_Click(object sender, EventArgs e)
         {
-            double a = 1 / Convert.ToDouble(txtDisplay.Text);
-            txtDisplay.Text = System.Convert.ToString(a);
+            //double a = 1 / Convert.ToDouble(txtDisplay.Text);
+            //txtDisplay.Text = System.Convert.ToString(a);
+            txtDisplay.Text = System.Convert.ToString(BusinessLogic.oneOver(txtDisplay));
         }
     }
 }
