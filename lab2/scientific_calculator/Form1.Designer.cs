@@ -448,7 +448,7 @@
             this.btnDot.Name = "btnDot";
             this.btnDot.Size = new System.Drawing.Size(53, 51);
             this.btnDot.TabIndex = 2;
-            this.btnDot.Text = ".";
+            this.btnDot.Text = ",";
             this.btnDot.UseVisualStyleBackColor = true;
             this.btnDot.Click += new System.EventHandler(this.buttonClick);
             // 
@@ -582,7 +582,7 @@
             // chartToolStripMenuItem
             // 
             this.chartToolStripMenuItem.Name = "chartToolStripMenuItem";
-            this.chartToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.chartToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.chartToolStripMenuItem.Text = "Chart";
             this.chartToolStripMenuItem.Click += new System.EventHandler(this.chartToolStripMenuItem_Click);
             // 
