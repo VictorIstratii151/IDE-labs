@@ -9,5 +9,6 @@ namespace scientific_calculator
 {
     class PlotLogic
     {
+
     }
 }
