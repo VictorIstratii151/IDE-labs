@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace scientific_calculator
 {
-    public partial class Form2 : Form
+    public partial class Chart_Maker : Form
     {
-        public Form2()
+        public Chart_Maker()
         {
             InitializeComponent();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            this.Width = 655;
+            this.Height = 444;
         }
 
         private void button1_Click(object sender, EventArgs e)

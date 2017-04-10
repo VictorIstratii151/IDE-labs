@@ -93,6 +93,8 @@ namespace scientific_calculator
 
         private void Calculator_Load(object sender, EventArgs e)
         {
+            this.MaximumSize = new System.Drawing.Size(275, 408);
+            this.MinimumSize = new System.Drawing.Size(275, 408);
             this.Width = 275;
             txtDisplay.Width = 230;
         }
@@ -107,9 +109,9 @@ namespace scientific_calculator
             enterValue = false;
             Button num = (Button)sender;
 
-            if(num.Text == ".")
+            if(num.Text == ",")
             {
-                if(!txtDisplay.Text.Contains("."))
+                if(!txtDisplay.Text.Contains(","))
                 {
                     txtDisplay.Text += num.Text;
                 }
@@ -183,12 +185,16 @@ namespace scientific_calculator
 
         private void standardToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.MaximumSize = new System.Drawing.Size(275, 408);
+            this.MinimumSize = new System.Drawing.Size(275, 408);
             this.Width = 275;
             txtDisplay.Width = 230;
         }
 
         private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.MaximumSize = new System.Drawing.Size(550, 408);
+            this.MinimumSize = new System.Drawing.Size(550, 408);
             this.Width = 550;
             txtDisplay.Width = 485;
         }
@@ -344,7 +350,7 @@ namespace scientific_calculator
 
         private void chartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 Chart = new Form2();
+            Chart_Maker Chart = new Chart_Maker();
             Chart.ShowDialog();
         }
     }

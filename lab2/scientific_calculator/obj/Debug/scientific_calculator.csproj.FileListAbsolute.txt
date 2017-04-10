@@ -7,5 +7,5 @@ D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.Prop
 D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.csproj.GenerateResource.Cache
 D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.exe
 D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.pdb
-D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.Form2.resources
 D:\Code\IDE-labs\lab2\scientific_calculator\bin\Debug\NCalc.dll
+D:\Code\IDE-labs\lab2\scientific_calculator\obj\Debug\scientific_calculator.Chart_Maker.resources

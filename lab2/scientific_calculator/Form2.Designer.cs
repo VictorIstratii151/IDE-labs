@@ -1,6 +1,6 @@
 ﻿namespace scientific_calculator
 {
-    partial class Form2
+    partial class Chart_Maker
     {
         /// <summary>
         /// Required designer variable.
@@ -81,7 +81,7 @@
             this.Erase.Text = "Erase";
             this.Erase.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // Chart_Maker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,8 +90,8 @@
             this.Controls.Add(this.Plot);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.chart1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "Chart_Maker";
+            this.Text = "Plot";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
