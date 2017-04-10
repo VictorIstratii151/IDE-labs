@@ -29,7 +29,7 @@ namespace scientific_calculator
 
         private void bckSpcBtn(object sender, EventArgs e)
         {
-            txtDisplay.Text = BusinessLogic.backspace(txtDisplay);
+            txtDisplay.Text = BusinessLogic.backspace(txtDisplay.Text);
             //if(txtDisplay.Text.Length > 0)
             //{
             //    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
@@ -128,12 +128,16 @@ namespace scientific_calculator
         private void btnCE(object sender, EventArgs e)
         {
             // txtDisplay.Text = "0";
-            txtDisplay.Text = BusinessLogic.CE(txtDisplay);
+            txtDisplay.Text = BusinessLogic.CE(txtDisplay.Text);
         }
 
         private void btnC(object sender, EventArgs e)
         {
-            BusinessLogic.Clear(txtDisplay, lblShow);
+            string txt = txtDisplay.Text;
+            string lbl = lblShow.Text;
+            BusinessLogic.Clear(ref txt, ref lbl);
+            txtDisplay.Text = txt;
+            lblShow.Text = lbl;
             //txtDisplay.Text = "0";
             //lblShow.Text = "";
         }
@@ -291,28 +295,28 @@ namespace scientific_calculator
                 case "Dec":
                     {
                         int a = int.Parse(txtDisplay.Text);
-                        txtDisplay.Text = BusinessLogic.toDec(txtDisplay);
+                        txtDisplay.Text = BusinessLogic.toDec(txtDisplay.Text);
                     }
                     break;
 
                 case "Bin":
                     {
                         int a = int.Parse(txtDisplay.Text);
-                        txtDisplay.Text = BusinessLogic.toBin(txtDisplay);
+                        txtDisplay.Text = BusinessLogic.toBin(txtDisplay.Text);
                     }
                     break;
 
                 case "Hex":
                     {
                         int a = int.Parse(txtDisplay.Text);
-                        txtDisplay.Text = BusinessLogic.toHex(txtDisplay);
+                        txtDisplay.Text = BusinessLogic.toHex(txtDisplay.Text);
                     }
                     break;
 
                 case "Oct":
                     {
                         int a = int.Parse(txtDisplay.Text);
-                        txtDisplay.Text = BusinessLogic.toOct(txtDisplay);
+                        txtDisplay.Text = BusinessLogic.toOct(txtDisplay.Text);
                     }
                     break;
             }
@@ -321,13 +325,13 @@ namespace scientific_calculator
         private void btnPow2_Click(object sender, EventArgs e)
         {
             //double a = Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text);
-            txtDisplay.Text = System.Convert.ToString(BusinessLogic.Pow2(txtDisplay));
+            txtDisplay.Text = System.Convert.ToString(BusinessLogic.Pow2(txtDisplay.Text));
         }
 
         private void btnPow3_Click(object sender, EventArgs e)
         {
             //double a = Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text);
-            txtDisplay.Text = System.Convert.ToString(BusinessLogic.Pow3(txtDisplay));
+            txtDisplay.Text = System.Convert.ToString(BusinessLogic.Pow3(txtDisplay.Text));
             //txtDisplay.Text = System.Convert.ToString(a);
         }
 
@@ -335,7 +339,7 @@ namespace scientific_calculator
         {
             //double a = 1 / Convert.ToDouble(txtDisplay.Text);
             //txtDisplay.Text = System.Convert.ToString(a);
-            txtDisplay.Text = System.Convert.ToString(BusinessLogic.oneOver(txtDisplay));
+            txtDisplay.Text = System.Convert.ToString(BusinessLogic.oneOver(txtDisplay.Text));
         }
 
         private void chartToolStripMenuItem_Click(object sender, EventArgs e)

@@ -35,30 +35,30 @@ namespace calculatorLogic
             return d1 % d2;
         }
 
-        public static string backspace(TextBox txt)
+        public static string backspace(string txt)
         {
-            if (txt.Text.Length > 0)
+            if (txt.Length > 0)
             {
-                txt.Text = txt.Text.Remove(txt.Text.Length - 1, 1);
+                txt = txt.Remove(txt.Length - 1, 1);
             }
 
-            if (txt.Text == "")
+            if (txt == "")
             {
-                txt.Text = "0";
+                txt = "0";
             }
 
-            return txt.Text;
+            return txt;
         }
 
-        public static string CE(TextBox txt)
+        public static string CE(string txt)
         {
-            return "0";
+            return txt = "0";
         }
         
-        public static void Clear(TextBox txt, Label lbl)
+        public static void Clear(ref string txt, ref string lbl)
         {
-            txt.Text = "0";
-            lbl.Text = "";
+            txt = "0";
+            lbl = "";
         }
 
         public static double PlusMinus(double d1)
@@ -126,51 +126,51 @@ namespace calculatorLogic
             return Math.Tanh(d1);
         }
 
-        public static string toDec(TextBox txt)
+        public static string toDec(string txt)
         {
-            int a = int.Parse(txt.Text);
+            int a = int.Parse(txt);
 
             return System.Convert.ToString(a, 10);
         }
 
-        public static string toBin(TextBox txt)
+        public static string toBin(string txt)
         {
-            int a = int.Parse(txt.Text);
+            int a = int.Parse(txt);
 
             return System.Convert.ToString(a, 2);
         }
 
-        public static string toOct(TextBox txt)
+        public static string toOct(string txt)
         {
-            int a = int.Parse(txt.Text);
+            int a = int.Parse(txt);
 
             return System.Convert.ToString(a, 8);
         }
 
-        public static string toHex(TextBox txt)
+        public static string toHex(string txt)
         {
-            int a = int.Parse(txt.Text);
+            int a = int.Parse(txt);
 
             return System.Convert.ToString(a, 16);
         }
 
-        public static double Pow2(TextBox txt)
+        public static double Pow2(string txt)
         {
-            double a = Double.Parse(txt.Text);
+            double a = Double.Parse(txt);
 
             return a * a;
         }
 
-        public static double Pow3(TextBox txt)
+        public static double Pow3(string txt)
         {
-            double a = Double.Parse(txt.Text);
+            double a = Double.Parse(txt);
 
             return a * a * a;
         }
 
-        public static double oneOver(TextBox txt)
+        public static double oneOver(string txt)
         {
-            double a = Double.Parse(txt.Text);
+            double a = Double.Parse(txt);
 
             return 1 / a;
         }
