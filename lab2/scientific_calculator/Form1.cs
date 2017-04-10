@@ -337,5 +337,11 @@ namespace scientific_calculator
             //txtDisplay.Text = System.Convert.ToString(a);
             txtDisplay.Text = System.Convert.ToString(BusinessLogic.oneOver(txtDisplay));
         }
+
+        private void chartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 Chart = new Form2();
+            Chart.ShowDialog();
+        }
     }
 }
