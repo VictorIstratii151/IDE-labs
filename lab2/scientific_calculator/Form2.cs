@@ -62,9 +62,9 @@ namespace scientific_calculator
 
         private void Erase_Click(object sender, EventArgs e)
         {
-            if (chart1.Series.Count > 0)
+            foreach (var series in chart1.Series)
             {
-                chart1.Series.Clear();
+                series.Points.Clear();
             }
 
             ChartTextBox.Text = "";
