@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab3App</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Waddup from section: %1$d</string>
+    <string name="hello">Hello</string>
+    <string name="click_me">Click me!</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_lap">Lap</string>
+</resources>
