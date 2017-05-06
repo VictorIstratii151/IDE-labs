@@ -1,6 +1,5 @@
 package com.example.lab3app;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -59,7 +58,7 @@ public class ChronometerFragment extends Fragment
     @Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View rootView = inflater.inflate(R.layout.chrono_fragment, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_chrono, container, false);
 
         btnStart = (Button) rootView.findViewById(R.id.start);
         btnPause = (Button) rootView.findViewById(R.id.pause);
