@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity
 
                 case 1:
                 {
-                    return ChronometerFragment.newInstance();
+                    return PomodoroFragment.newInstance();
                 }
             }
             return null;

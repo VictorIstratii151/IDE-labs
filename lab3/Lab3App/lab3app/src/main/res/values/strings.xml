@@ -7,4 +7,10 @@
     <string name="btn_start">Start</string>
     <string name="btn_pause">Pause</string>
     <string name="btn_lap">Lap</string>
+    <string name="btn_start2">Start</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_reset">Reset</string>
+    <string name="work_left">Time to work:</string>
+    <string name="rest_left">Time to rest:</string>
+    <string name="pomodoros_earned"> Pomodoros earned:</string>
 </resources>
