@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1 Hey homeboys! Let me tell you a bit about my app.
+  section.css-table
+    section.two-column
+      section.cell
+        h2 As I already mentioned, I used node.js as the server runtime environment.
+        p But what about the rest? 
+        p In my project wasn't fully involved the MEAN stack, so it leaks the AngularJS for front end and MongoDB for working with database. I decided only to create 3 static web pages, so it was enough for me to use node.js and Express.js as the web applicatuon server framework. Also. instead of using the traditional html and CSS for front end, I tried the more user-friendly Jade and Stylus.
+      section.cell
+        h2 First of all, I had to set up the node and all its packages.
+        p Interesting thing, that on Ubuntu the traditional "node" was renamed to "nodejs" to avoid ambiguities with other packages. This provoqued different legacy problems, as npm (node package manager) wasn't able to find the "node" environment on the machine. This was solved by creating a sym-link from "node" to "nodejs". 
+        p When the Express app was created, there were automatically generated many files and folders, where were halndled the basic request for the homepage of app, the errors, the used packages, and th folders containing the styesheets.
+        p First of all it was necessary to create the html (jade in my case) views of pages. I made 3 of them - index, about and contact. They are stored in views folder. To make the app know where to redirect the user when someone would type "index" in the browser, the links were necessary to handle in the index.js file.
+  section.css-table
+    section.three-column
+      section.cell
+        h3 What about the style? 
+        p As with other public resources, the stylesheets were present in the folder stylesheeds. There can be found the automatically generated style.css and style.styl files. When creating the app, I mentioned to Express that I would like to write the style in stylus language.
+      section.cell
+        h3 Pretty good fonts!
+        p Using the "Font squirrel" service, I downloaded few dank font. They are situated in the fonts folder. But, in the stylesheets folder, it was necessary to specify them, so that was done in the file chunkfive-fontface.css.
+        p For the typography of site it was created a child folder with a respective file in it, in stylesheets directory.
+      section.cell
+        h3 Mixin' the mixins
+        p Some general things, which differ on several browsers, were stored in the special file called css3.styl. This file is located in the child directory of stylesheets, called mixins. Here are defined the specifics for different browser vendors.
