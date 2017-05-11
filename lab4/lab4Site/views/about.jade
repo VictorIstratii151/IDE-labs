@@ -12,7 +12,7 @@ block content
         h2 First of all, I had to set up the node and all its packages.
         p Interesting thing, that on Ubuntu the traditional "node" was renamed to "nodejs" to avoid ambiguities with other packages. This provoqued different legacy problems, as npm (node package manager) wasn't able to find the "node" environment on the machine. This was solved by creating a sym-link from "node" to "nodejs". 
         p When the Express app was created, there were automatically generated many files and folders, where were halndled the basic request for the homepage of app, the errors, the used packages, and th folders containing the styesheets.
-        p First of all it was necessary to create the html (jade in my case) views of pages. I made 3 of them - index, about and contact. They are stored in views folder. To make the app know where to redirect the user when someone would type "index" in the browser, the links were necessary to handle in the index.js file.
+        p First of all it was necessary to create the html (jade in my case) views of pages. I made 3 of them - index, about and contact. They are stored in views folder. To make the app know where to redirect the user when someone would type "index" in the browser, the links were necessary to handle in the index.js file. This is the very file which does the routing in Express.
   section.css-table
     section.three-column
       section.cell
